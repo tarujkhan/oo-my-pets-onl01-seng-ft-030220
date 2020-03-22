@@ -23,7 +23,7 @@ def self.count
   @@all.size 
 end
 
-def self.list_pets
+def self.reset_all
   @@all.clear
 end 
 
@@ -72,6 +72,10 @@ def sell_pets
   a.owner = nil 
 end 
 end 
-end 
-  
 
+def list_pets 
+  
+return "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+
+end 
+end 
